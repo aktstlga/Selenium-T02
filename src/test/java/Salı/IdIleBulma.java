@@ -1,5 +1,6 @@
 package Salı;
 
+import Utility.Function;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -13,5 +14,6 @@ public class IdIleBulma {
         WebElement aramaKutusu = driver.findElement(By.id("q")); //Q id ile yazılmış olan elemanı bul.
         aramaKutusu.sendKeys("Portakal");
 
+        driver.quit();
     }
 }
