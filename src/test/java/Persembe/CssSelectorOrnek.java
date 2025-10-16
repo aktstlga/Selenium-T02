@@ -13,11 +13,11 @@ public class CssSelectorOrnek extends BaseDriver {
     {
         driver.get("https://qa-practice.netlify.app/auth_ecommerce");
 
-        WebElement email = driver.findElement(By.cssSelector(""));
+        WebElement email = driver.findElement(By.cssSelector("input[class='form-control'][aria-describedby='emailHelp']"));
         email.clear();
         email.sendKeys("admin@admin.com");
 
-        WebElement password = driver.findElement(By.cssSelector(""));
+        WebElement password = driver.findElement(By.cssSelector("input[type='password'][class='form-control'][id='password'][placeholder='Enter Password - insert admin123'][name='password']"));
         password.clear();
         password.sendKeys("admin123");
 
